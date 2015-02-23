@@ -1,14 +1,35 @@
 /**
-* User.js
-*
-* @description :: TODO: You might write a short summary of how this model works and what it represents here.
-* @docs        :: http://sailsjs.org/#!documentation/models
-*/
+ * User.js
+ *
+ * @description :: Users.
+ * @docs        :: http://sailsjs.org/#!documentation/models
+ */
 
 module.exports = {
-
-  attributes: {
-
-  }
+    attributes: {
+        // Username of the user
+        username: {
+            type: 'string',
+            required: true,
+            size: 20
+        },
+        // Hashed password of the user
+        password: {
+            type: 'string',
+            required: true,
+            size: 100
+        },
+        // Sessions associated with the user
+        sessions: {
+            collection: 'session',
+            via: 'user'
+        },
+        // Active flag
+        active: {
+            type: 'boolean',
+            defaultsTo: 1
+        }
+    },
+    schema: true
 };
 

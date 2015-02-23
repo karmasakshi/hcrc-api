@@ -1,7 +1,7 @@
 /**
- * PurchaseController
+ * InvoiceController
  *
- * @description :: Server-side logic for managing purchases
+ * @description :: Server-side logic for managing invoices
  * @help        :: See http://links.sailsjs.org/docs/controllers
  */
 
