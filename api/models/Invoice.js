@@ -20,7 +20,7 @@ module.exports = {
         // Amount buyer owes to seller
         credit:{
             type: 'float',
-            required: true
+            defaultsTo: 0
         },
         // Money transferred to seller in cash against product(s) bought
         cash: {

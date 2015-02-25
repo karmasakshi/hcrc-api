@@ -16,8 +16,7 @@ module.exports = {
         // Hashed password of the user
         password: {
             type: 'string',
-            required: true,
-            size: 100
+            required: true
         },
         // Sessions associated with the user
         sessions: {

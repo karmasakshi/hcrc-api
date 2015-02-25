@@ -11,7 +11,7 @@ module.exports = {
         name: {
             type: 'string',
             required: true,
-            size: 40,
+            size: 80,
             unique: true
         },
         // Phone number(s) of the trader

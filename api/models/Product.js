@@ -1,7 +1,7 @@
 /**
  * Product.js
  *
- * @description :: Products being sold or bought.
+ * @description :: Products.
  * @docs        :: http://sailsjs.org/#!documentation/models
  */
 
@@ -11,14 +11,14 @@ module.exports = {
         name: {
             type: 'string',
             required: true,
-            size: 20,
+            size: 80,
             unique: true
         },
         // Unit of measurement
         unit: {
             type: 'string',
-            required: true,
-            size: 10
+            defaultsTo: 'unit',
+            size: 20
         },
         // Join entries
         _invoiceproducts: {
