@@ -15,13 +15,13 @@ module.exports = {
             unique: true
         },
         // Phone number(s) of the trader
-        phone: {
+        phones: {
             type: 'string',
             size: 40
         },
-        // Email address of the trader
-        email: {
-            type: 'email'
+        // Email address(es) of the trader
+        emails: {
+            type: 'string'
         },
         // Purchases associated with the trader
         purchases: {
