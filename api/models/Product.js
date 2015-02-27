@@ -20,6 +20,10 @@ module.exports = {
             defaultsTo: 'unit',
             size: 20
         },
+        defaultprice: {
+            type: 'float',
+            defaultsTo: 0
+        },
         // Join entries
         _invoiceproducts: {
             collection: '_invoiceproduct',

@@ -18,7 +18,7 @@ module.exports = {
             required: true
         },
         // Amount buyer owes to seller
-        credit:{
+        credit: {
             type: 'float',
             defaultsTo: 0
         },
@@ -42,9 +42,13 @@ module.exports = {
             type: 'text'
         },
         // Complete flag
-        complete:{
+        complete: {
             type: 'boolean',
             defaultsTo: 0
+        },
+        addedBy: {
+            model: 'admin',
+            required: true
         },
         // Join entries
         _invoiceproducts: {

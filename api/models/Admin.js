@@ -23,6 +23,11 @@ module.exports = {
             collection: 'session',
             via: 'admin'
         },
+        // Invoices associated with the admin
+        invoices: {
+            collection: 'invoice',
+            via: 'addedBy'
+        },
         // Active flag
         active: {
             type: 'boolean',
