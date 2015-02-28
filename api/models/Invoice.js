@@ -7,13 +7,14 @@
 
 module.exports = {
     attributes: {
-        // Trader who bought the product(s)
-        buyer: {
-            model: 'trader',
+        // Indicates a sale or purchase
+        type: {
+            type: 'string',
+            enum: ['purchase', 'sale'],
             required: true
         },
-        // Trader who sold the product(s)
-        seller: {
+        // Trader who bought/sold the product(s)
+        trader: {
             model: 'trader',
             required: true
         },
@@ -37,17 +38,16 @@ module.exports = {
             type: 'float',
             defaultsTo: 0
         },
-        // Notes
-        notes: {
+        // Note
+        note: {
             type: 'text'
         },
-        // Complete flag
-        complete: {
-            type: 'boolean',
-            defaultsTo: 0
-        },
-        addedBy: {
+        addedby: {
             model: 'admin',
+            required: true
+        },
+        date: {
+            type: 'date',
             required: true
         },
         // Join entries
@@ -63,4 +63,3 @@ module.exports = {
     },
     schema: true
 };
-

@@ -23,15 +23,10 @@ module.exports = {
         emails: {
             type: 'string'
         },
-        // Purchases associated with the trader
-        purchases: {
+        // Invoices associated with the trader
+        invoices: {
             collection: 'invoice',
-            via: 'buyer'
-        },
-        // Sales associated with the trader
-        sales: {
-            collection: 'invoice',
-            via: 'seller'
+            via: 'trader'
         },
         // Active flag
         active: {
@@ -41,4 +36,3 @@ module.exports = {
     },
     schema: true
 };
-

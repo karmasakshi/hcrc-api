@@ -26,7 +26,7 @@ module.exports = {
         // Invoices associated with the admin
         invoices: {
             collection: 'invoice',
-            via: 'addedBy'
+            via: 'addedby'
         },
         // Active flag
         active: {
