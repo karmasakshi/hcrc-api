@@ -24,6 +24,10 @@ module.exports = {
             type: 'float',
             defaultsTo: 0
         },
+        inventorylow:{
+            type: 'integer',
+            defaultsTo: 0
+        },
         // Join entries
         _invoiceproducts: {
             collection: '_invoiceproduct',
